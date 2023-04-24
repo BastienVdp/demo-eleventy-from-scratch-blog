@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Neitsab Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<style>
+			{% include "./assets/bundle.css" %}
+		</style>
+	</head>
+	<body data-barba="wrapper">
+		<div class="cursor cursor--small"></div>
+		<canvas class="cursor cursor--canvas" resize></canvas>
+
+		<div class="container">
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			{% include "navigation.html" %}
+			<div class="content" data-template="inside" data-scroll-container>
+				<div class="project">
+					<h1 class="project-name">
+						
+						<a href="" target="_blank" class="gogithub" id="link">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							Check on my github
+						</a>
+					</h1>
+			
+					<div class="project-single">
+						<div class='single-frame'>
+							<img src="{{ }}" alt="">
+						</div>
+					</div>
+					<div class="project-row">
+						<label>about</label>
+						<p>dd</p>
+					</div>
+					<div class="project-row">
+						<label>details</label>
+						<ul>
+							
+						</ul>
+					</div>
+					<div class="project-row">
+						<label>informations</label>
+						<ul>
+							<li>
+								<span>Name</span>
+								
+							</li>
+							<li>
+								<span>Role</span>
+								Web Developer
+							</li>
+							<li>
+								<span>Date</span>
+								
+							</li>
+						</ul>
+					</div>
+			
+					<a href="/#works" class="goback" id="link">
+						<svg viewBox="0 0 37 15" fill="none">
+							<path d="M3.02141 7.48318L36.2936 7.48318" stroke-width="2.08134" stroke-linejoin="round"/>
+							<path d="M3.02144 7.48325L35.2538 7.48324" stroke-width="2.08134" stroke-linejoin="round"/>
+							<path d="M8.22018 1.24465C5.78389 3.68094 4.41795 5.04688 1.98165 7.48318L8.22018 13.7217" stroke-width="2.08134" stroke-linejoin="round"/>
+						</svg>
+			
+						<span>Back</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<script>
+		{% include "./assets/bundle.js" %}
+	</script>
+</html>

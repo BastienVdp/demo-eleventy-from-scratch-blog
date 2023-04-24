@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
+	<!DOCTYPE html>
+	<html lang="fr">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title | default: "My Blog" }}</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Neitsab Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/assets/bundle.css">
 	</head>
-	<body>
-		<header>
-			<h1>{{ title | default: "My Blog" }}</h1>
-		</header>
-		<main>
+	<body data-barba="wrapper">
+		<div class="cursor cursor--small"></div>
+		<canvas class="cursor cursor--canvas" resize></canvas>
+
+		<div class="container">
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+			{% include "navigation.html" %}
 			{{ content }}
-		</main>
+		</div>
+		
+		
+		
 	</body>
+	<script src="/assets/bundle.js"></script>
 </html>
