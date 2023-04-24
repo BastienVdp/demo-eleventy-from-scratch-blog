@@ -1,5 +1,5 @@
 {
-  "name": "demo-eleventy-from-scratch-blog",
+  "name": "eleventy-portfolio",
   "version": "1.0.0",
   "description": "Companion code to the “6 Minutes to Build a Blog from Scratch” tutorial.",
   "scripts": {
